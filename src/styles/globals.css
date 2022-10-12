@@ -44,20 +44,18 @@ a {
 .content {
   position: absolute;
   width: 1080px;
-  height: 1918.3px;
-  top: 0;
 }
 
 .content2 {
   width: 115px;
   height: 36px;
-  padding-left: 10%;
+  padding-left: 5%;
   color: #707070;
   margin-top: 15%;
 }
 
 .textcaja {
-  
+
   font-family: MazdaType;
   text-align: left;
   position: absolute;
@@ -66,28 +64,45 @@ a {
   padding-left: 50%;
 }
 
-.rectangulo {
+.rectangulo-placa {
   position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   align-content: center;
-  width: 850px;
+  width: 991px;
   height: 339px;
-  margin: 100px 120px 46px;
+  margin: 45px 45px 46px;
   padding: 94px 153px 117px 152px;
   border-radius: 4px;
   border: solid 1px var(--very-light-pink);
   background-color: #fff;
 }
 
+
+.rectangulo-factura {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+
+  width: 991px;
+  height: 948px;
+  margin: 200px 44px 24px 45px;
+  padding: 94px 153px 117px 152px;
+  border-radius: 4px;
+  border: solid 1px var(--very-light-pink);
+  background-color: #fff;
+}
+
+
 .label {
-  
+  margin: 5px 769px 4px 0;
+
   font-family: MazdaType;
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-direction: column-reverse;
   width: 300px;
   height: 40px;
   font-size: 34px;
@@ -95,23 +110,36 @@ a {
   font-stretch: normal;
   font-style: normal;
   line-height: 0.65;
-  letter-spacing: 1.13px;
   text-align: left;
   color: #000;
 }
 
-.title2{
+.title2 {
   width: 686px;
   height: 53px;
-  padding-left: 5%;
-  margin: 45px 270px 45px 35px;
-  margin-left: 10%;
+  padding-left: 3%;
+  margin: 45px 270px 10px 35px;
   font-family: MazdaType;
   font-size: 42px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.39px;
+  text-align: left;
+  color: #fff;
+}
+
+.title3 {
+  width: 686px;
+  height: 36px;
+  margin: 0px 314px 0px 80px;
+  font-family: MazdaType;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.26px;
   text-align: left;
   color: #fff;
 }
@@ -128,7 +156,7 @@ a {
   background-color: #000;
 }
 
-.buttonSecundary{
+.buttonSecundary {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -142,8 +170,21 @@ a {
   padding: 26px 129px 30px 130px;
   background-color: #751132;
 }
+.button-factura{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 98px;
+  margin: 96px 300px 353px 145px;
+  padding: 27px 108px 26px;
+  border-radius: 10px;
+  background-color: #751132;
+}
 
-.text-button{
+.text-button {
   width: 221px;
   height: 45px;
   font-family: MazdaType;

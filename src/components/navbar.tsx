@@ -4,11 +4,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import type { NextPage } from "next";
 import Image from "next/image";
 import logomazda from "public/logo-mazda.png";
-import imageFondo from "public/fondo_mazda.png";
-import KeyboardBackspace from "@mui/icons-material/KeyboardBackspace";
 
 const Navbar = () => {
   return (

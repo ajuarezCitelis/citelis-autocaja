@@ -1,5 +1,4 @@
 import { Box } from "@mui/system";
-import type { NextPage } from "next";
 import Image from "next/image";
 import imageFondo from "public/fondo_mazda.png";
 

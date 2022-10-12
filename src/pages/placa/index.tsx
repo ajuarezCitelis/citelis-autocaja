@@ -1,6 +1,8 @@
 import {
   Box,
   Button,
+  Container,
+  FormControl,
   TextField,
   Typography,
 } from "@mui/material";
@@ -23,7 +25,7 @@ const pagePlaca: NextPage = () => {
         <Image src={imageFondo} />
       </Box>
 
-      <Box className="content2"  >
+      <Box className="content2">
         <Button
           size="large"
           color="inherit"
@@ -35,31 +37,22 @@ const pagePlaca: NextPage = () => {
       </Box>
 
       <Box className="content">
-        <Typography
-          paddingTop={"20%"}
-          className="title2"
-          variant="h5"
-          gutterBottom
-        >
+        <Typography className="title2" variant="h5" gutterBottom>
           REALIZA TU PAGO
         </Typography>
-        <Box className="rectangulo">
-          <Typography className="label"> *NO. PLACA </Typography>
-
+        <Container className="rectangulo-placa">
           <Box
             sx={{
-              width: 400,
+              width: 800,
               maxWidth: "100%",
             }}
           >
-            <TextField
-              required
-              fullWidth
-              label="INGRESA TU NO. DE PLACA"
-              id="fullWidth"
-            />
+            <FormControl fullWidth variant="outlined">
+              <Typography className="label"> *NO. PLACA </Typography>
+              <TextField fullWidth label="Ingresa tu no. de placa" />
+            </FormControl>
           </Box>
-        </Box>
+        </Container>
         <Box paddingTop={"30%"}>
           <Button variant="contained" className="buttonSecundary">
             <Typography className="text-button" gutterBottom>
