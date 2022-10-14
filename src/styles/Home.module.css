@@ -1,15 +1,13 @@
-.content{
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  color: #707070;
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;}
+.contentBox{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 1080;
+    height: 1920px;
+    color: #707070;
+    display: flex;
+    justify-content: center;}
 .logoBox{
-  
   margin-top: 25%;
   width: 637.1px;
 }

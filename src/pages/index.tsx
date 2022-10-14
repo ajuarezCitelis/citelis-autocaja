@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   <Box className="content">
     <Navbar />
 
-    <Box className={styles.content}>
+    <Box className={styles.contentBox} width="1080px" height="1920px">
       <Image src={imageFondo} />
 
 
