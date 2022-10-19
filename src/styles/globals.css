@@ -97,7 +97,6 @@ a {
 
 .label {
   margin: 5px 769px 4px 0;
-
   font-family: MazdaType;
   justify-content: center;
   align-items: center;
@@ -144,6 +143,90 @@ a {
   color: #fff;
 }
 
+.imageinicio{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 637.1px;
+  height: 144.6px;
+  margin: 175px 200px 0 221.9px;
+  
+
+}
+.content-text{
+
+  margin-top: 311px;
+  position: absolute;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.title-imprimir{
+  width: 686px;
+  height: 115px;
+  margin: 90px 0 8px 117px;
+  font-family: MazdaType;
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.39px;
+  text-align: center;
+  color: #fff;
+}
+.title2-imprimir{
+
+  width: 686px;
+  height: 72px;
+  margin: 8px 0 48px 117px;
+  font-family: MazdaType;
+  font-size: 42px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.39px;
+  text-align: center;
+  color: #fff;
+}
+
+.conteiner-button{
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 600px 100px 0px 270px;
+
+
+}
+.conteiner-button1{
+  width: 480px;
+  height: 98px;
+  margin: 48px 100px 0px 43px;
+  padding: 27px 37px 26px;
+  border-radius: 10px;
+  background-color: #747474;
+
+
+}
+.conteiner-button2{
+  width: 480px;
+  height: 98px;
+  margin: 100px 103px 0px 43px;
+  padding: 27px 146px 26px 147px;
+  border-radius: 10px;
+  background-color: #751132;
+}
 
 .appbar {
   position: absolute;
@@ -167,7 +250,7 @@ a {
   height: 98px;
   border-radius: 10px;
   margin: 160px 270px 0 290px;
-  padding: 26px 129px 30px 130px;
+  padding: 26px 129px 30px 10px;
   background-color: #751132;
 }
 .button-factura{
