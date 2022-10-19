@@ -6,14 +6,15 @@
     height: 1920px;
     color: #707070;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    margin: 0.7px 0 0;}
 
   .Box{
   }
   
   .texto_encima{
     position: absolute;
-    width: 1080px;
+    width: 1040px;
   }
   
   

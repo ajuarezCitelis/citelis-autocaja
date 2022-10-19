@@ -43,7 +43,6 @@ const pagePlaca: NextPage = () => {
         <Container className="rectangulo-placa">
           <Box
             sx={{
-              width: 800,
               maxWidth: "100%",
             }}
           >
