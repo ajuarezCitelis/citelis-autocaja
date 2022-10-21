@@ -35,9 +35,8 @@
 
 .titleBienvenido{
     width: 666px;
-  font-family: MazdaType;
+  font-family: MazdaTypeBold;
   font-size: 42px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
@@ -71,9 +70,8 @@
 .text_button{
     width: 360px;
     height: 45px;
-    font-family: MazdaType;
+    font-family: MazdaTypeBold;
     font-size: 38px;
-    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 0.87;
@@ -82,9 +80,8 @@
     color: rgba(255, 255, 255, 0.87);
 }
 .text_buttonInicio {
-  font-family: MazdaType;
+  font-family: MazdaTypeBold;
   font-size: 32px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.03;

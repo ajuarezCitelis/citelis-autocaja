@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "MazdaType";
+  src: local("MazdaType"),
+   url("/fonts/MazdaType.ttf") format("opentype");
+  }
+@font-face {
+  font-family: "MazdaTypeBold";
+  src: local("MazdaTypeBold"),
+    url("/fonts/MazdaTypeBold.ttf") format("truetype");
+  }
 html,
 body {
   padding: 0;
@@ -102,10 +112,9 @@ a {
   align-items: center;
   align-content: center;
   flex-direction: column-reverse;
-  width: 300px;
+  width: 305px;
   height: 40px;
   font-size: 34px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.65;
@@ -173,7 +182,6 @@ a {
   margin: 90px 0 8px 117px;
   font-family: MazdaType;
   font-size: 42px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
@@ -250,7 +258,6 @@ a {
   height: 98px;
   border-radius: 10px;
   margin: 160px 270px 0 290px;
-  padding: 26px 129px 30px 10px;
   background-color: #751132;
 }
 .button-factura{
@@ -268,7 +275,7 @@ a {
 }
 
 .text-button {
-  width: 221px;
+  width: 268px;
   height: 45px;
   font-family: MazdaType;
   font-size: 38px;
@@ -279,5 +286,63 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.box_modal{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title_modal{
+  width: 570px;
+  height: 34px;
+  margin-top: 39px;
+  margin-bottom: 5px;
+  font-family: MazdaType;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #000;
+}
+.subtitle_modal{
+  width: 570px;
+  height: 72px;
+  margin: 18px 10px 14px 5px;
+  font-family: MazdaType;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #000;
+}
+.buttonSecundaryModal {
+  width: 480px;
+  height: 98px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #751132;
+}
+
+.textButtonModal{
+  width: 414px;
+  height: 45px;
+  font-family: MazdaType;
+  font-size: 38px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.87;
+  letter-spacing: normal;
+  text-align: center;
   color: rgba(255, 255, 255, 0.87);
 }

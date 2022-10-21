@@ -44,7 +44,7 @@ const pageFactura: NextPage = () => {
         <Typography className="title2" variant="h5" gutterBottom>
           SOLICITA TU FACTURA
         </Typography>
-        <Typography className="title3">Ingresa tus datos</Typography>
+        <Typography className="title3">Ingresa tu información</Typography>
       </Box>
       <Container className="rectangulo-factura">
         <Grid container spacing={3}>
@@ -89,7 +89,7 @@ const pageFactura: NextPage = () => {
             <FormControl fullWidth variant="outlined">
               <Typography className="label"> *Régimen fiscal </Typography>
               <Select>
-                <MenuItem value={10}>Fisca</MenuItem>
+                <MenuItem value={10}>Fiscal</MenuItem>
                 <MenuItem value={20}>Moral</MenuItem>
               </Select>
             </FormControl>
@@ -117,7 +117,7 @@ const pageFactura: NextPage = () => {
         <Box paddingTop={"5%"}>
           <Button variant="contained" className="button-factura">
             <Typography className="text-button" gutterBottom>
-              Continuar
+             ENVIAR DATOS
             </Typography>
           </Button>
         </Box>

@@ -48,7 +48,7 @@ const pagePlaca: NextPage = () => {
           >
             <FormControl fullWidth variant="outlined">
               <Typography className="label"> *NO. PLACA </Typography>
-              <TextField fullWidth label="Ingresa tu no. de placa" />
+              <TextField fullWidth label="INGRESA TU NO. DE PLACA" />
             </FormControl>
           </Box>
         </Container>

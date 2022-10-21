@@ -2,13 +2,32 @@ import { Box, Button,Modal,Typography } from "@mui/material";
 import type { NextPage } from "next";
 import imageFondo from "public/fondo_mazda.png";
 import imageInicio from "public/inicio-logo-mazda.png";
-
+import CancelIcon from '@mui/icons-material/Cancel';
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import { KeyboardBackspace } from "@mui/icons-material";
 import { Container } from "@mui/system";
 import React from "react";
 
+const style = {
+  position: 'absolute' as 'absolute',
+  top: '51.5%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '634px',
+  height: '437px',
+  bgcolor: 'background.paper',
+  borderRadius: '10px',
+  border: 'solid 1px var(--very-light-pink)',
+  boxShadow: 24,
+  padding: '16px',
+};
+
+const button = {
+  float: 'right',
+  width: '54px',
+  height: '54px',
+};
 const pageImprimir: NextPage = () => {
 
 
@@ -70,13 +89,18 @@ const pageImprimir: NextPage = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box >
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+         
+         <Box sx={style}>
+          <Box sx={button} onClick={handleClose}><CancelIcon sx={{ fontSize: "54px" }}/></Box>
+          <Box className="box_modal">
+          <Typography className="title_modal">
+            MUCHAS GRACIAS POR TU PREFERENCIA
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <Typography className="subtitle_modal">
+            Puedes recoger tu factura impresa en recepción.
           </Typography>
+          <Button className="buttonSecundaryModal"><Typography className="textButtonModal">TERMINAR OPERACIÓN</Typography></Button>
+          </Box>
         </Box>
       </Modal>
       </Box>

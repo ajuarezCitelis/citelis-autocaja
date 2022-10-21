@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import imageFondo from "public/fondo_mazda.png";
-import imageLogo from "public/logo-mazda.png";
+import imageLogo from "public/inicio-logo-mazda.png";
 import styles from "../../styles/Termino.module.css"
 import {
   Box,

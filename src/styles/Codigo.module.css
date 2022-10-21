@@ -35,7 +35,6 @@
   .footerTypo{
     font-family: MazdaType;
     font-size: 46px;
-    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 0.83;
@@ -53,9 +52,9 @@
   .boxRegresar{
     width: 115px;
     height: 36px;
-    padding-left: 5%;
+    padding-left: 3.0%;
     color: #707070;
-    margin-top: 15%;
+    margin-top: 15.5%;
    }
    .rectangulo_codigo{
     margin-top: 502px;
@@ -90,3 +89,18 @@
     text-align: left;
     color: #000;
    }
+
+   .title {
+    width: 686px;
+    height: 53px;
+    padding-left: 1%;
+    margin: 45px 270px 10px 35px;
+    font-family: MazdaType;
+    font-size: 42px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.39px;
+    text-align: left;
+    color: #fff;
+  }

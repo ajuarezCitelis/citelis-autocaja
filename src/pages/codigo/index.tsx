@@ -36,7 +36,7 @@ const pageCodigo: NextPage = () => {
           Regresar
         </Button>
       </Box>
-      <Typography className="title2" variant="h5" gutterBottom>
+      <Typography className={styles.title} variant="h5" gutterBottom>
           REALIZA TU PAGO
         </Typography>
       </Box>
@@ -50,7 +50,7 @@ const pageCodigo: NextPage = () => {
       <Box className={styles.boxFooter}>
             <Box className={styles.footerText}>
               <Box>
-              <Typography className={styles.footerTypo}>ESCANER QR </Typography>
+              <Typography className={styles.footerTypo}>Escáner QR </Typography>
               <ExpandCircleDownIcon className={styles.icon}style={{ fill: 'white' }}/> 
                 </Box>
             </Box>
