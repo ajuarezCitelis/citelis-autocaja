@@ -51,6 +51,7 @@ const pageCodigo: NextPage = () => {
             <Box className={styles.footerText}>
               <Box>
               <Typography className={styles.footerTypo}>Escáner QR </Typography>
+
               <ExpandCircleDownIcon className={styles.icon}style={{ fill: 'white' }}/> 
                 </Box>
             </Box>

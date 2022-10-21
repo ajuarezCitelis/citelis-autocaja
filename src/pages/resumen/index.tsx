@@ -11,6 +11,7 @@ import Navbar from "../../components/navbar";
 import Image from "next/image";
 import styles from "../../styles/Resumen.module.css"
 import DataGridDemo from "../../components/dataGrid";
+
 import {useState } from 'react';
 import ModalCard from '../../components/modal';
 
@@ -24,6 +25,7 @@ const pageResumen: NextPage = () => {
 
   return    (
   <Box className="content">
+
   <Navbar />
   <Box
     className="content"
@@ -102,11 +104,13 @@ const pageResumen: NextPage = () => {
             </Button>
         </Box>
         <Box className={styles.boxButtonss} >
+
               <Typography className={styles.text_button2} gutterBottom>
                 CANCELAR OPERACIÓN
               </Typography>
         </Box>
         <>{open? <ModalCard setOpen={setOpen}  />:""} </>
+
   </Box>
   
   );
