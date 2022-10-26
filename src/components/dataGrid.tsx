@@ -20,16 +20,15 @@ const columns: GridColDef[] = [
   {
     field: 'age',
     headerName: 'IMPORTE',
-    type: 'number',
     width: 110,
     editable: true,
   },
 ];
 
 const rows = [
-  { id: 1, DESCRIPCION: '0.90 x 500.00 SERVICIO POR 60000KM', MONEY: '$', age: 500.00 },
-  { id: 2, DESCRIPCION: '1.00 x 181.03 CARTUCHO FILTRO PARA ACEITE', MONEY: '$', age: 1000.00 },
-  { id: 3, DESCRIPCION: '0.69 x 500.00 REVISION DE BATERIA', MONEY: '$', age: 200.00 },
+  { id: 1, DESCRIPCION: '0.90 x 500.00 SERVICIO POR 60000KM', MONEY: '$', age: '500.00' },
+  { id: 2, DESCRIPCION: '1.00 x 181.03 CARTUCHO FILTRO PARA ACEITE', MONEY: '$', age: '1000.00' },
+  { id: 3, DESCRIPCION: '0.69 x 500.00 REVISION DE BATERIA', MONEY: '$', age: '200.00' },
 
 ];
 

@@ -48,7 +48,7 @@ const pageResumen: NextPage = () => {
   </Box>
   <Box className="content">
         <Typography className="title2" variant="h5" gutterBottom>
-         TICKET DE SERVICIOS
+         TICKET DE SERVICIO
         </Typography>
         <Container className={styles.rectangulo}>
           <Box
@@ -64,7 +64,7 @@ const pageResumen: NextPage = () => {
               </Box>
               <Box className={styles.Texts}>
                           <Typography className={styles.title}>UNIDAD</Typography>
-                          <Typography className={styles.descripcion}>MAZDA 2 SÉDAN</Typography>
+                          <Typography className={styles.descripcion}>MAZDA 2 SEDÁN</Typography>
               </Box>
               <Box className={styles.Texts}>
                           <Typography className={styles.title}>NO. DE PLACA</Typography>

@@ -47,14 +47,14 @@
 .title_pago{
   position: relative;
   font-family: MazdaType;
-  font-size: 42px;
-  font-weight: normal;
+  font-size: 36px;
+  font-weight: inherit;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.945);
 }
 .boxButtons{
   position: relative;
@@ -63,18 +63,15 @@
   margin-top: 36px;
   width: 452px;
   height: 98px;
-  padding: 27px 71px 26px;
   border-radius: 10px;
   background-color: #751132;
 }
 .text_button{
-    width: 360px;
     height: 45px;
     font-family: MazdaTypeBold;
     font-size: 38px;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.87;
     letter-spacing: normal;
     text-align: center;
     color: rgba(255, 255, 255, 0.87);
