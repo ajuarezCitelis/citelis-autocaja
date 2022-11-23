@@ -4,8 +4,12 @@ import React from "react";
 import Backdrop from '@mui/material/Backdrop';
 import CancelIcon from '@mui/icons-material/Cancel';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import { useRouter } from 'next/router'
+
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, react/prop-types
 export default function ModalCard({setOpen} : any) {
+  const router = useRouter()
+
     const style = {
         position: 'absolute',
         top: '50%',
@@ -13,7 +17,6 @@ export default function ModalCard({setOpen} : any) {
         transform: 'translate(-50%, -50%)',
         width: '1080px',
         height:'1920px',
-        border: '2px solid #000',
         display: 'flex',
         margin: '248.5px 0px 0px 0px',
         alignItems: 'flex-end',
@@ -23,7 +26,7 @@ export default function ModalCard({setOpen} : any) {
         
       };
       const style2 = {
-        bgcolor: '#751132',
+        bgcolor: '#0051DF',
         width: '489px',
         height: '162px',
         display: 'flex',
@@ -37,9 +40,10 @@ export default function ModalCard({setOpen} : any) {
         transform: 'translate(-50%, -50%)',
         width:'634px',
         height:'300px',
-        bgcolor: 'green',
         borderRadius: '10px',
-        border: 'solid 1px var(--very-light-pink)',
+        borderWidth:'0.1em',
+        borderStyle: 'double', 
+        borderColor: '#256ce6',
         backgroundColor: '#fff',
       };
  
@@ -55,7 +59,7 @@ export default function ModalCard({setOpen} : any) {
         width: '570px',
         height: '72px',
         margin: '21px 10px 14px 5px',
-        fontFamily: 'MazdaType',
+        fontFamily: 'Metropolis-Regular',
         fontSize: '34px',
         fontWeight: 'normal',
         fontStretch: 'normal',
@@ -67,9 +71,8 @@ export default function ModalCard({setOpen} : any) {
       };
       const subtitleModalP = {
         height: '65px',
-        margin: '21px 10px 14px 5px',
-        fontFamily: 'MazdaType',
-        fontSize: '46px',
+        fontFamily: 'Metropolis-Bold',
+        fontSize: '40px',
         fontStretch: 'normal',
         fontStyle: 'normal',
         lineHeight: '0.83',
@@ -96,7 +99,7 @@ export default function ModalCard({setOpen} : any) {
     <Fade in={Boolean(setOpen)}>
     <Box sx={style} >
     <Box sx={style2}>
-        <Box>
+        <Box onClick={async () => await router.push('/termino')}>
             <Typography  sx={subtitleModalP}>
             Terminal de pago <ArrowCircleRightIcon sx={{ fontSize: "41.8px", width:'50px',float:'right', margin:'0px 0 12.2px 18.2px', }}/> 
           </Typography> 

@@ -1,4 +1,3 @@
-import { KeyboardBackspace } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -6,14 +5,13 @@ import {
   Typography
 } from "@mui/material";
 import type { NextPage } from "next";
-import imageFondo from "public/fondo_mazda.png";
 import Navbar from "../../components/navbar";
-import Image from "next/image";
 import styles from "../../styles/Resumen.module.css"
 import DataGridDemo from "../../components/dataGrid";
 
 import {useState } from 'react';
 import ModalCard from '../../components/modal';
+import ButtonRegresar from "../../components/buttonRegresar";
 
 const pageResumen: NextPage = () => {
 
@@ -33,18 +31,11 @@ const pageResumen: NextPage = () => {
     height="1920px"
     width="1080px"
   >
-    <Image src={imageFondo} />
   </Box>
 
   <Box className="content2">
-    <Button
-      size="large"
-      color="inherit"
-      startIcon={<KeyboardBackspace />}
-      variant="text"
-    >
-      Regresar
-    </Button>
+  <ButtonRegresar  urls="/codigo"/>
+
   </Box>
   <Box className="content">
         <Typography className="title2" variant="h5" gutterBottom>
@@ -60,15 +51,15 @@ const pageResumen: NextPage = () => {
             <Box className={styles.TextRight}>
             <Box className={styles.Texts}>
                           <Typography className={styles.title}>CLIENTE</Typography>
-                          <Typography className={styles.descripcionNombre}>JUAN PATRICIO PEREZ PIÑÓN</Typography>
+                          <Typography className={styles.descripcionNombre}>Juan Patricio Peres Piñon</Typography>
               </Box>
               <Box className={styles.Texts}>
                           <Typography className={styles.title}>UNIDAD</Typography>
-                          <Typography className={styles.descripcion}>MAZDA 2 SEDÁN</Typography>
+                          <Typography className={styles.descripcion}>Mazda 2 Sedán</Typography>
               </Box>
               <Box className={styles.Texts}>
-                          <Typography className={styles.title}>NO. DE PLACA</Typography>
-                          <Typography className={styles.descripcion}>PKL-223-334</Typography>
+                          <Typography className={styles.title}>AGENCIA</Typography>
+                          <Typography className={styles.descripcion}>Mazda Ravisa</Typography>
               </Box>
 
             </Box>
@@ -79,10 +70,13 @@ const pageResumen: NextPage = () => {
                           <Typography className={styles.descripcionFecha}>20/09/2022</Typography>
               </Box>
               <Box className={styles.Texts2}>
-                          <Typography className={styles.title}>NO.</Typography>
+                          <Typography className={styles.title}>NO.DE ORDEN</Typography>
                           <Typography className={styles.descripcion}>D123509-A3</Typography>
               </Box>
-              
+              <Box className={styles.Texts2}>
+                          <Typography className={styles.title}>NO.DE PLACA</Typography>
+                          <Typography className={styles.descripcion}>PKL-223-334</Typography>
+              </Box>
             </Box>
            </Box>
            <Box className={styles.tableGrid}>

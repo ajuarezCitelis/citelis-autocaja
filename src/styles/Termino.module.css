@@ -35,18 +35,18 @@
 
 .titleBienvenido{
     width: 666px;
-  font-family: MazdaTypeBold;
+  font-family: Metropolis-Bold;
   font-size: 42px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: center;
-  color: #fff;
+  color: #000000;
 }
 .title_pago{
   position: relative;
-  font-family: MazdaType;
+  font-family: Metropolis-Regular;
   font-size: 36px;
   font-weight: inherit;
   font-stretch: normal;
@@ -54,7 +54,7 @@
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.945);
+  color: #000000;
 }
 .boxButtons{
   position: relative;
@@ -63,29 +63,29 @@
   margin-top: 36px;
   width: 452px;
   height: 98px;
-  border-radius: 10px;
-  background-color: #751132;
+  border-radius: 45px;
+  background-color: #00225c;
 }
 .text_button{
     height: 45px;
-    font-family: MazdaTypeBold;
+    font-family: Metropolis-Regular;
     font-size: 38px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
-    color: rgba(255, 255, 255, 0.87);
+    color: #ffffff;
 }
 .text_buttonInicio {
-  font-family: MazdaTypeBold;
+  font-family: Metropolis-Regular;
   font-size: 32px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.03;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #fff;
-  text-decoration: underline rgb(255, 255, 255);
+  color: #0051df;
+  text-decoration: underline;
 }
 .boxFooter{
   height: 80px;

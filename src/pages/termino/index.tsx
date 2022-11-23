@@ -1,15 +1,14 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Navbar from "../../components/navbar";
-import imageFondo from "public/fondo_mazda.png";
-import imageLogo from "public/inicio-logo-mazda.png";
+import imageLogo from "public/citelis-logo-color.png";
 import styles from "../../styles/Termino.module.css"
 import {
   Box,
   Button,
   Typography,
 } from "@mui/material";
-import { KeyboardBackspace } from "@mui/icons-material";
+import ButtonRegresar from "../../components/buttonRegresar";
 const HomeTermino: NextPage = () => {
   return (
 <Box className="content">
@@ -20,18 +19,13 @@ const HomeTermino: NextPage = () => {
     height="1920px"
     width="1080px"
   >
-    <Image src={imageFondo} />
+  
   </Box>
 
   <Box className="content2">
-    <Button
-      size="large"
-      color="inherit"
-      startIcon={<KeyboardBackspace />}
-      variant="text"
-    >
-      Regresar
-    </Button>
+
+  <ButtonRegresar  urls="/resumen"/>
+
   </Box>
       <Box className={styles.texto_encima}>
         <Box className={styles.logoBox}>
@@ -52,7 +46,7 @@ const HomeTermino: NextPage = () => {
               </Typography>
             </Button> 
           </Box>
-          <Box className={styles.boxButtons}>
+          <Box className={styles.boxButtons} >
               <Typography className={styles.text_buttonInicio} gutterBottom>
                 VOLVER AL INICIO 
               </Typography>

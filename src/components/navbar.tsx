@@ -5,7 +5,7 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import logomazda from "public/logo-mazda.png";
+import logomazda from "public/citelis-logo-blanco.png";
 
 const Navbar = () => {
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
         ></Image>
         <Box>
           <Typography
-            className="text_caja"
+            font-family={"Metropolis-Medium"}
             width="500px"
             height="44px"
             margin="22px"

@@ -8,7 +8,7 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
     return (
         <Box className={styles.boxFooter}>
             <Box className={styles.footerText}>
-                <Typography className={styles.footerTypo}><CopyrightIcon/> MAZDA MOTOR DE MÉXICO. TODOS LOS DERECHOS RESERVADOS</Typography>
+                <Typography className={styles.footerTypo}><CopyrightIcon/> CITELIS 2022. TODOS LOS DERECHOS RESERVADOS</Typography>
             </Box>
         </Box>
     );

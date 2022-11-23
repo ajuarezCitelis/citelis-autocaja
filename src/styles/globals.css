@@ -1,19 +1,23 @@
 @font-face {
-  font-family: "MazdaType";
-  src: local("MazdaType"),
-   url("/fonts/MazdaType.ttf") format("opentype");
+  font-family: "Metropolis-Medium";
+  src: local("Metropolis-Medium"),
+   url("/metropolisfontfamily/Metropolis-Medium.otf") format("truetype");
   }
 @font-face {
-  font-family: "MazdaTypeBold";
-  src: local("MazdaTypeBold"),
-    url("/fonts/MazdaTypeBold.ttf") format("truetype");
+  font-family: "Metropolis-Regular";
+  src: local("Metropolis-Regular"),
+    url("/metropolisfontfamily/Metropolis-Regular.otf") format("truetype");
   }
+  @font-face {
+    font-family: "Metropolis-Bold";
+    src: local("Metropolis-Bold"),
+      url("/metropolisfontfamily/Metropolis-Bold.otf") format("truetype");
+    }
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Metropolis-Medium;
 }
 
 a {
@@ -84,8 +88,8 @@ a {
   margin: 45px 45px 46px;
   padding: 94px 153px 117px 152px;
   border-radius: 4px;
-  border: solid 1px var(--very-light-pink);
-  background-color: #fff;
+  border: solid 1px #0051DF;
+  background-color: #f4f8ff;
 }
 
 
@@ -100,19 +104,20 @@ a {
   margin: 200px 44px 24px 45px;
   padding: 94px 153px 117px 152px;
   border-radius: 4px;
-  border: solid 1px var(--very-light-pink);
-  background-color: #fff;
+  
+  border-width: 0.1em;
+  border-style: double;
+  border-color: #256ce6;
+  background-color: #f4f8ff;
 }
 
 
 .label {
-  margin: 5px 769px 4px 0;
-  font-family: MazdaType;
+  font-family: Metropolis-Regular;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column-reverse;
-  width: 305px;
   height: 40px;
   font-size: 34px;
   font-stretch: normal;
@@ -127,14 +132,14 @@ a {
   height: 53px;
   padding-left: 3%;
   margin: 45px 270px 10px 35px;
-  font-family: MazdaType;
+  font-family: Metropolis-Bold;
   font-size: 42px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: left;
-  color: #fff;
+  color: #00225c;
 }
 
 .title3 {
@@ -149,7 +154,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.26px;
   text-align: left;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .imageinicio{
@@ -180,21 +185,21 @@ a {
   width: 686px;
   height: 115px;
   margin: 90px 0 8px 117px;
-  font-family: MazdaType;
+  font-family:Metropolis-Bold;
   font-size: 42px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: center;
-  color: #fff;
+  color: #00225c;
 }
 .title2-imprimir{
 
   width: 686px;
   height: 72px;
   margin: 8px 0 48px 117px;
-  font-family: MazdaType;
+  font-family: Metropolis-Regular;
   font-size: 42px;
   font-weight: normal;
   font-stretch: normal;
@@ -202,7 +207,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.39px;
   text-align: center;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .conteiner-button{
@@ -222,7 +227,7 @@ a {
   height: 98px;
   margin: 48px 100px 0px 43px;
   padding: 27px 37px 26px;
-  border-radius: 10px;
+  border-radius: 45px;
   background-color: #747474;
 
 
@@ -232,8 +237,8 @@ a {
   height: 98px;
   margin: 100px 103px 0px 43px;
   padding: 27px 146px 26px 147px;
-  border-radius: 10px;
-  background-color: #751132;
+  border-radius: 45px;
+  background-color: #00225c;
 }
 
 .appbar {
@@ -244,7 +249,7 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #000;
+  background-color: #00225c;
 }
 
 .buttonSecundary {
@@ -256,10 +261,11 @@ a {
   align-content: center;
   width: 480px;
   height: 98px;
-  border-radius: 10px;
+  border-radius: 45px;
   margin: 160px 270px 0 290px;
-  background-color: #751132;
+  background-color: #00225c;
 }
+
 .button-factura{
   position: absolute;
   display: flex;
@@ -270,18 +276,31 @@ a {
   height: 98px;
   margin: 96px 300px 353px 145px;
   padding: 27px 108px 26px;
-  border-radius: 10px;
-  background-color: #751132;
+  border-radius: 45px;
+  background-color: #00225c;
 }
 
 .text-button {
   width: 268px;
   height: 45px;
-  font-family: MazdaType;
+  font-family: Metropolis-Bold;
   font-size: 38px;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.87;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: rgba(255, 255, 255, 0.87);
+}
+.text-buttonPlaca {
+  width: 268px;
+  height: 45px;
+  font-family: Metropolis-Bold;
+  font-size: 38px;
+  font-stretch: normal;
+  font-style: normal;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -302,7 +321,7 @@ a {
   height: 34px;
   margin-top: 39px;
   margin-bottom: 5px;
-  font-family: MazdaType;
+  font-family: Metropolis-Bold;
   font-size: 28px;
   font-weight: bold;
   font-stretch: normal;
@@ -315,8 +334,8 @@ a {
 .subtitle_modal{
   width: 570px;
   height: 72px;
-  margin: 18px 10px 14px 5px;
-  font-family: MazdaType;
+  margin: 36px 10px 14px 5px;
+  font-family: Metropolis-Regular;
   font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
@@ -329,15 +348,14 @@ a {
 .buttonSecundaryModal {
   width: 480px;
   height: 98px;
-  border-radius: 10px;
+  border-radius: 45px;
   margin-top: 54px;
-  background-color: #751132;
+  background-color: #00225C;
 }
 
 .textButtonModal{
-  width: 414px;
   height: 45px;
-  font-family: MazdaType;
+  font-family: Metropolis-Bold;
   font-size: 38px;
   font-stretch: normal;
   font-style: normal;
@@ -345,4 +363,15 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: rgba(255, 255, 255, 0.87);
+}
+.title-placa{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.title-placa2{
+  display: flex;
+  align-items: center;
+  height: 30px;
 }

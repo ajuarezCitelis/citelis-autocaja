@@ -1,40 +1,30 @@
 import {
   Box,
-  Button,
   Typography,
   Container
 } from "@mui/material";
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
-
-import KeyboardBackspace from "@mui/icons-material/KeyboardBackspace";
-import imageFondo from "public/fondo_mazda.png";
 import imageEscaner from "public/imagenes_escanear.png";
 import Image from "next/image";
 import Navbar from "../../components/navbar";
 import styles from "../../styles/Codigo.module.css"
 import type { NextPage } from "next";
-
+import { useRouter } from 'next/router'
+import ButtonRegresar from "../../components/buttonRegresar";
 const pageCodigo: NextPage = () => {
+  const router = useRouter()
+
   return (
     <Box className="content">
     <Navbar />
 
     <Box className={styles.contentBox} >
-      <Image src={imageFondo} />
 
 
       <Box className={styles.texto_encima}>
         
       <Box className={styles.boxRegresar}>       
-        <Button
-          size="large"
-          color="inherit"
-          startIcon={<KeyboardBackspace />}
-          variant="text"
-          className={styles.button}
-        >
-          Regresar
-        </Button>
+      <ButtonRegresar  urls="/"/>
       </Box>
       <Typography className={styles.title} variant="h5" gutterBottom>
           REALIZA TU PAGO
@@ -47,7 +37,7 @@ const pageCodigo: NextPage = () => {
         </Typography>
         </Container>
 
-      <Box className={styles.boxFooter}>
+      <Box className={styles.boxFooter} onClick={async () => await router.push('/resumen')}>
             <Box className={styles.footerText}>
               <Box>
               <Typography className={styles.footerTypo}>Escáner QR </Typography>

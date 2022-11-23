@@ -13,8 +13,7 @@ import {
 } from "@mui/material";
 import type { NextPage } from "next";
 import Navbar from "../../components/navbar";
-import imageFondo from "public/fondo_mazda.png";
-import Image from "next/image";
+
 import { KeyboardBackspace } from "@mui/icons-material";
 
 const pageFactura: NextPage = () => {
@@ -27,7 +26,7 @@ const pageFactura: NextPage = () => {
         height="1920px"
         width="1080px"
       >
-        <Image src={imageFondo} />
+        
       </Box>
       <Box className="content2">
         <Button

@@ -6,13 +6,14 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import imageFondo from "public/fondo_mazda.png";
 import type { NextPage } from "next";
-import Image from "next/image";
-import KeyboardBackspace from "@mui/icons-material/KeyboardBackspace";
 import Navbar from "../../components/navbar";
+import { useRouter } from 'next/router'
+import ButtonRegresar from "../../components/buttonRegresar";
 
 const pagePlaca: NextPage = () => {
+  const router = useRouter()
+
   return (
     <Box className="content">
       <Navbar />
@@ -22,18 +23,10 @@ const pagePlaca: NextPage = () => {
         height="1920px"
         width="1080px"
       >
-        <Image src={imageFondo} />
       </Box>
 
       <Box className="content2">
-        <Button
-          size="large"
-          color="inherit"
-          startIcon={<KeyboardBackspace />}
-          variant="text"
-        >
-          Regresar
-        </Button>
+      <ButtonRegresar  urls="/"/>
       </Box>
 
       <Box className="content">
@@ -46,15 +39,22 @@ const pagePlaca: NextPage = () => {
               maxWidth: "100%",
             }}
           >
-            <FormControl fullWidth variant="outlined">
-              <Typography className="label"> *NO. PLACA </Typography>
-              <TextField fullWidth label="INGRESA TU NO. DE PLACA" />
+            <FormControl fullWidth variant="outlined" sx={{ width: '650px' }}>
+              <Box className="title-placa">  
+              <Box className="title-placa2"><Typography   sx={{
+              fontSize: "4rem",
+               }}>*</Typography>
+              <Typography className="label">Ingresa tu No. de Placa </Typography>
+              </Box>
+            <TextField  fullWidth label="Ingresa tu No. de Placa"   style={{
+             backgroundColor: "white"}}/>
+            </Box>
             </FormControl>
           </Box>
         </Container>
         <Box paddingTop={"30%"}>
-          <Button variant="contained" className="buttonSecundary">
-            <Typography className="text-button" gutterBottom>
+          <Button variant="contained" className="buttonSecundary" onClick={async () => await router.push('/resumen')}>
+            <Typography className="text-buttonPlaca" gutterBottom>
               Continuar
             </Typography>
           </Button>

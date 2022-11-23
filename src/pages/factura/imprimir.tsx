@@ -1,7 +1,6 @@
 import { Box, Button,Modal,Typography } from "@mui/material";
 import type { NextPage } from "next";
-import imageFondo from "public/fondo_mazda.png";
-import imageInicio from "public/inicio-logo-mazda.png";
+import imageInicio from "public/citelis-logo-color.png";
 import CancelIcon from '@mui/icons-material/Cancel';
 import Image from "next/image";
 import Navbar from "../../components/navbar";
@@ -48,7 +47,7 @@ const pageImprimir: NextPage = () => {
         height="1920px"
         width="1080px"
       >
-        <Image src={imageFondo} />
+       
       </Box>
       <Box className="content2">
         <Button
